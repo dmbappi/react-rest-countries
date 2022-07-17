@@ -15,11 +15,13 @@ const Countries = () => {
     },[])
 
     return (
-        <div>
-            {/* <h1>Hello from Countries: {countries.length}</h1> */}
+        <div >
+            <h1>Hello from Countries: {countries.length}</h1>
+            <div className="countries-container">
             {
-                countries.map(country => <Country country={country} />)
+                countries.map(country => <Country key={country.capital} country={country} />)
             }
+            </div>
             
         </div>
     );

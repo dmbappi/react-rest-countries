@@ -10,9 +10,7 @@ const Country = (props) => {
             <h1>Name: {name}</h1>
             <img src={flag} alt="" />
             <p><small>{region}</small></p>
-            <p>Capital:{capital}</p>
-            <p>Population: {population}</p>
-            
+            <p>Capital is: {capital} Population: {population}</p>
         </div>
     );
 };
